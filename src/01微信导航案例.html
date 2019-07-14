@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>骑士逸-微信导航案例</title>
+	<style type="text/css">
+	body,ul,li{
+		margin:0;
+		padding:0;
+	}
+	ul li{
+		float:left;
+		list-style:none;
+	}
+	a{
+		text-decoration:none;
+	}
+	.nav{
+		height:75px;
+		background:url("./images/weixin_bg.jpg");
+	}
+	.nav-con{
+		width:700px;
+		height:75px;
+		margin:0 auto;
+	}
+	ul{
+		height:75px;
+		line-height: 75px;/*为了让文字居中*/
+	}
+	ul li a{
+		display:inline-block;
+		height:33px;
+		margin-right:20px;
+		font:16px/33px 微软雅黑;
+		color:#fff;
+		background:url("./images/weixin_jlt.png") 0px -144px no-repeat;
+		padding-left:15px;
+	}
+	ul li a span{
+		display:inline-block;
+		height:33px;
+		/*background:url("./images/weixin_jlt.png") right -144px no-repeat;*/
+		background:url("./images/weixin_jlt.png") right  -144px no-repeat;/*写了right就表示直接从右边开始，不需要再写x轴的坐标，只需要写y轴的坐标*/
+		padding-right:15px;
+	}
+	ul li a:hover{
+		background:url("./images/weixin_jlt.png") 0px -192px;
+	}
+	ul li a span:hover{
+		background:url("./images/weixin_jlt.png") right -192px;
+	}
+</style>
+</head>
+<body>
+	<div class="nav">
+		<div class="nav-con">
+			<ul>
+				<li><a href="#"><span>首页</span></a></li>
+				<li><a href="#"><span>下载吧</span></a></li>
+				<li><a href="#"><span>公共平台公共平台公共平台公共平台</span></a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
